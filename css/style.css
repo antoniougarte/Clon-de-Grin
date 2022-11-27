@@ -1,9 +1,126 @@
+/*Globales css*/
+:root{
+    --blanco: #fff;
+    --negro: #111111;
+    --verde: #26d07c;
+    --borde-boton: #64a19d;
+    --gris: rgba(0, 0, 0, 0.5);
+}
+@font-face {
+    font-family: Muli;
+    src: url(/fonts/Muli.ttf);
+}
+@font-face {
+    font-family: Muli-light;
+    src: url(/fonts/Muli-ExtraLight.ttf);
+}
 
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 14px;
+    font-family: Muli;
+}
+
+h1,h2,h3,p{
+    margin:0
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 90%;
+}
+.text-center{
+    text-align: center;
+}
+.mt-2{
+    margin-top:2rem
+}
 
 .header__nav{
     display: flex;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header__nav__links{
+.header__nav__logo{
+    width: 60px;
+}
+.header__nav__btn a{
+    padding: 0.5rem;
+    border: var(--borde-boton) 1px solid;
+    border-radius: 4px;
+    color: var(--borde-boton);
+}
+.header__nav__links{    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--blanco);
+    padding-top: .5rem;
     display: none;
+}
+.header__nav__links a{
+    color: var(--gris);
+    font-size: 1rem;
+    padding-bottom: 1.2rem;
+    padding-left: 5%
+}
+.header__nav__links a:hover{
+    color: var(--negro)
+}
+
+.header__main{
+    height: 600px;
+    background-image: url(/img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.header__main h1{
+    color: var(--verde);
+    font-family: Muli-light;
+    letter-spacing: 0.2rem;
+    font-weight:500;
+    font-size: 3rem;
+}
+.header__main p{
+    color: var(--blanco);
+    font-size: 1rem;
+    padding-bottom: 2.5rem;
+    padding-top: .5rem;
+}
+.header__main a{
+    background-color: var(--verde);
+    letter-spacing: 0.1rem;
+    padding: 1.3rem 2rem;
+    color: var(--blanco);
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.header__main a:hover{
+    background-color: var(--borde-boton)
 }
