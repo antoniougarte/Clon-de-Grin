@@ -75,7 +75,10 @@ img{
     width: 100%;
     background-color: var(--blanco);
     padding-top: .5rem;
-    display: none;
+    visibility: hidden;
+}
+.active{
+    visibility: inherit;
 }
 .header__nav__links a{
     color: var(--gris);
