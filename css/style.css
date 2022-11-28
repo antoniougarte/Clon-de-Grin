@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: Muli;
-    src: url('/fonts/Muli.ttf');
+    src: url('./fonts/Muli.ttf');
 }
 @font-face {
     font-family: Muli-light;
